@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- esto es un comentario -->
+<html>
+
+<head>
+
+	<script src="script.js"></script>
+
+	<meta charset="utf-8">
+	<title>Proyecto</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<input id="rck" type="button" value="rock">
+
+		<input id="ppr" type="button" value="paper">
+
+		<input id="scs" type="button" value="scissors">
+
+	</div>
+
+
+	<div class="resultados">
+
+		<p>
+		||Scores|| 
+		</p>
+		<br>
+		<br>
+
+		<p id="result">
+			________
+		</p>
+	</div>
+
+	<script>
+
+
+		let ppr = document.getElementById("ppr");
+		let scs = document.getElementById("scs");
+		let rck = document.getElementById("rck");
+		//let plr=prompt("input a name...");
+		//let total=0;
+
+		rck.addEventListener("click", function () {
+			play("rock", computerPlay());
+		});
+
+		ppr.addEventListener("click", function () {
+			play("paper", computerPlay());
+		});
+
+		scs.addEventListener("click", function () {
+			play("paper", computerPlay());
+		});
+		
+
+if(total==5){
+	alert("game finished!");
+}
+
+	//alert("gma finished");
+	//alert(plr);
+	
+
+	/*
+	let score = puntos;
+	alert("test" + score)
+*/
+		
+	</script>
+
+</body>
+
+<!--
+</div class="r"></div>
+</div class="p"></div>
+</div class="s"></div>
+-->
+
+</html>
